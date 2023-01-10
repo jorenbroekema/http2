@@ -1,0 +1,23 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "start": "npm run build && cd dist && http-server -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@web/rollup-plugin-html": "^1.11.0",
+    "http-server": "^14.1.1",
+    "rollup": "^3.9.1"
+  },
+  "dependencies": {
+    "@lion/ui": "^0.0.12"
+  }
+}
